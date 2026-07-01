@@ -8,6 +8,7 @@
       city: "Hyderabad"
       state: "Telangana"
       country: "India"
+      
     - type: permanent
       street: 101
       apartment: "Venkateswara Residency"
