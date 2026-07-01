@@ -1,0 +1,42 @@
+{
+    "students": [
+       {
+           "firstname": "Rajashekhar Reddy",
+           "lastname": "G",
+           "age": 20,
+           "addresses": [
+              {
+                   "street": "123 Main St",
+                   "city": "Hyderabad",
+                   "state": "Telangana",
+                   "zip": "500001"
+              },
+              {
+                   "street": "456 Elm St",
+                   "city": "Bangalore",
+                   "state": "Karnataka",
+                   "zip": "560001"
+              }
+            ]
+       },
+        {
+           "firstname": "Rajashekhar Reddy",
+           "lastname": "G",
+           "age": 20,
+           "addresses": [
+              {
+                   "street": "346 Main St",
+                   "city": "Hyderabad",
+                   "state": "Telangana",
+                   "zip": "500002"
+              },
+              {
+                   "street": "789 Elm St",
+                   "city": "Bangalore",
+                   "state": "Karnataka",
+                   "zip": "560002"
+              }
+            ]
+       }
+   ]
+}

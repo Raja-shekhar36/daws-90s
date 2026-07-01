@@ -4,16 +4,16 @@
   <email>shekharreddy@gmail.com</email>
 
    <!-- <address>uppal, Hyd, 500039</address> -->
-   <addresses>
-        <tempaddress>
-          <street>uppal</street>
-           <city>Hyd</city>
-           <zip>500039</zip>
-        </tempaddress>
-        <permnentaddress>
-           <street>ghanpur</street>
-           <city>jangaon</city>
-           <zip>506143</zip>
-        </permnentaddress>
-    </addresses>
+<addresses>
+    <tempaddress>
+        <street>uppal</street>
+        <city>Hyd</city>
+        <zip>500039</zip>
+    </tempaddress>
+    <permnentaddress>
+        <street>ghanpur</street>
+        <city>jangaon</city>
+        <zip>506143</zip>
+    </permnentaddress>
+</addresses>
 </student>

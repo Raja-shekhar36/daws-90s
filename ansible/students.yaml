@@ -1,0 +1,34 @@
+- name: "Rajashekhar Reddy G"
+  dob: "15 Aug, 1945"
+  mobile: "1234567890"
+  addresses:
+    - type: current
+      street: 102
+      apartment: "sairam Residency"
+      city: "Hyderabad"
+      state: "Telangana"
+      country: "India"
+    - type: permanent
+      street: 101
+      apartment: "Venkateswara Residency"
+      city: "Hyderabad"
+      state: "Telangana"
+      country: "India"
+
+- name: "Rajashekhar Reddy G"
+  dob: "15 Aug, 1945"
+  mobile: "1234567890"
+  addresses:
+    - type: current
+      street: 102
+      apartment: "sairam Residency"
+      city: "Hyderabad"
+      state: "Telangana"
+      country: "India"
+      
+    - type: permanent
+      street: 101
+      apartment: "Venkateswara Residency"
+      city: "Hyderabad"
+      state: "Telangana"
+      country: "India"
