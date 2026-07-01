@@ -2,7 +2,7 @@
   hosts: frontend
   become: yes
   tasks:
-  - name: istall nginx
+  - name: install nginx
     ansible.builtin.package:
       name: nginx
       state: present
