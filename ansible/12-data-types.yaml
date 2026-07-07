@@ -1,0 +1,24 @@
+- name: course information
+  hosts: local
+  connection: local
+  vars: 
+    course: "DevSecOps with AIOps" # string
+    duration_in_hrs: 150 # int/number
+    is_live_sessions: true # bool
+    topics: # List
+      - Ansible
+      - shell
+      - linux
+    more_details: # map/Dictionary
+      months: 5
+      trainer: "shivakumar reddy"
+  tasks: 
+  - name: print information
+    debug:
+      msg: 
+        name: {{ course }}
+        duration: {{ duration_in_hrs }}
+        is_it_live: {{ is_live_sessions}}
+        topics: {{ topics }}
+        more_details: {{ more_details }}
+
