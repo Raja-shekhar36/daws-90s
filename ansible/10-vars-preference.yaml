@@ -4,13 +4,19 @@
     full_name: "Raj from play"
   # vars_files:
   # - course.yaml
-  vars_prompt:
-  - name: full_name
-    prompt: "please enter your full_name"
-    private: false
+  # vars_prompt:
+  # - name: full_name
+  #   prompt: "please enter your full_name"
+  #   private: false
   tasks: 
   - name: print vars preference
     vars:
      # full_name: "Raj from TASK level"
     debug: 
       msg: "Hi, {{ full_name }}"
+
+
+# 1. CMD Args
+# 2. Task
+# 3. Vars_files
+# 4. vars_prompt 
