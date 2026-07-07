@@ -15,7 +15,7 @@
   tasks: 
   - name: print information
     debug:
-      msg: 
+      msg: |
         name: {{ course }}
         duration: {{ duration_in_hrs }}
         is_it_live: {{ is_live_sessions}}
