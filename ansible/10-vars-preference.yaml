@@ -2,8 +2,8 @@
   hosts: frontend
   vars: 
     full_name: "Raj from play"
-  vars_files:
-  - course.yaml
+  # vars_files:
+  # - course.yaml
   vars_prompt:
   - name: full_name
     prompt: "please enter your full_name"
