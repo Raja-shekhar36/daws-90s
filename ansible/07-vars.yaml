@@ -1,0 +1,16 @@
+- name: demo on prompt
+  hosts: local:
+  connection: local
+  vars_prompt:
+    - name: username
+      prompt: What is your username?
+      private: false
+
+    - name: password
+      prompt: What is your password?
+      private: true
+
+  tasks:
+  - name: print Information
+    debug:
+      msg: "Username is {{ username }}, and password is {{ password  }}"
