@@ -1,0 +1,11 @@
+- name: demo on loops
+  hosts: local
+  connection: local
+  tasks: 
+  - name: print names
+    debug:
+      msg: "Hi, {{ item }}" # item is rserved special variable in ansible
+    loop:
+      - Ramesh
+      - Prashanth
+      - Sandeep
