@@ -1,7 +1,7 @@
-- name: demo on vars_files
-  hosts: local
+- name: demo on vars files
+  hosts: localhost
   connection: local
-  var_files:
+  vars_files:
   - course.yaml  
   tasks: 
   - name: print varibale informaion
