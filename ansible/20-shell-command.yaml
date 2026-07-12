@@ -5,3 +5,8 @@
     - name: command test
       # command: cat /etc/passwd | grep root
       shell: cat /etc/passwd | grep root
+      register: users_output
+
+    - name: print output
+      debug: 
+        msg: "{{ users_output }}"
