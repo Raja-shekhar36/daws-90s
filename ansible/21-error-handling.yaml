@@ -1,6 +1,7 @@
 - name: demon on error handling
   hosts: local
   connection: local
+  become: yes
   tasks: 
   - name: check roboshop user or exist or not
     command: id roboshop
