@@ -8,7 +8,7 @@
       project: roboshop
       envronment: dev
     full_name: Rajashekhar Reddy G
-    tagList: [
+    tagsList: [
        {
             key: "name",
             value: "Ansible"
@@ -37,4 +37,4 @@
 
   - name: convert list to map
     debug:
-      msg: "{{ tagMap | items2dict }}"
+      msg: "{{ tagsList | items2dict }}"
