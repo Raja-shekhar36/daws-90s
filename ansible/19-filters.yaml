@@ -3,6 +3,11 @@
   connection: local
   vars:
     topics: Linux, Shell, Ansible, Terraform
+    tagMap:
+      name: Ansible
+      project: roboshop
+      envronment: dev
+    full_name: Rajashekhar Reddy G
   tasks: 
   - name: convert string to list
     debug: 
@@ -11,3 +16,7 @@
   - name: set default value
     debug: 
       msg: "Hi {{ GEETING | default('Good Morning') }}"
+
+  - name: convert map to list
+    debug:
+      msg: "{{ tagMap | dict2items}}"
