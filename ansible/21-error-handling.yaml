@@ -1,0 +1,8 @@
+- name: demon on error handling
+  hosts: local
+  connection: local
+  tasks: 
+  - name: check roboshop user or exist or not
+    command: id roboshop
+    register: user_output
+   
