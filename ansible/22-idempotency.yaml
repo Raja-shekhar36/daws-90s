@@ -1,0 +1,7 @@
+- name: demo  on create user
+  hosts: local
+  connection: local
+  tasks:
+  - name: create user
+    user:
+      name: expense # useradd expense
