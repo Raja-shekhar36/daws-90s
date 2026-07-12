@@ -8,6 +8,20 @@
       project: roboshop
       envronment: dev
     full_name: Rajashekhar Reddy G
+    tagList: [
+       {
+            key: "name",
+            value: "Ansible"
+        },
+        {
+            key: "project",
+            value: "roboshop"
+        },
+        {
+            key: "envronment",
+            value: "dev"
+        }
+    ]
   tasks: 
   - name: convert string to list
     debug: 
@@ -19,4 +33,8 @@
 
   - name: convert map to list
     debug:
-      msg: "{{ tagMap | dict2items}}"
+      msg: "{{ tagMap | dict2items }}"
+
+  - name: convert list to map
+    debug:
+      msg: "{{ tagMap | items2dict }}"
