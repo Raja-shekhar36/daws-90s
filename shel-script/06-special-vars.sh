@@ -15,4 +15,4 @@ wait $!
 echo "Line Number: $LINENO"
 echo "Script executed in $SECONDS seconds"
 echo "Random number: $RANDOM"
-echo "Exit status: $?"
+echo "Exit comamnd status: $?"
