@@ -9,4 +9,6 @@ echo "Sum is: $SUM"
 
 # Array
 PROGRAMMES=("Java" "Python" "C++")  # index always starts from 0
-echo "Programmes are: ${PROGRAMMES[@]}"
+echo "First Programme is: ${PROGRAMMES[0]}"
+echo "First Programme is: ${PROGRAMMES[1]}"
+echo "First Programme is: ${PROGRAMMES[2]}"
