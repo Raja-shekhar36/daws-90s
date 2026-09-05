@@ -9,6 +9,16 @@ if [ $USERID -ne 0 ]; then
 fi
 
 # echo "I am continuing...."
+
+VALIDATE(){
+    if [ $2 -ne 0 ];then
+        echo "Installing $1 is .....FAILED"
+        exit 1
+    else
+        echo "Installing $1 is .....SUCCESS"
+    fi
+}
+
 dnf list installed mysql
 
 if [ $? -eq 0 ]; then
@@ -16,13 +26,7 @@ if [ $? -eq 0 ]; then
 else
     echo "Installing MySQL"
     dnf install mysql -y
-
-    if [ $? -ne 0 ];then
-        echo "Installing MySQL is .....FAILED"
-        exit 1
-    else
-        echo "Installing MySQL is .....SUCCESS"
-    fi
+    VALIDATE MySQL $?
 fi
 
 dnf list installed nginx
@@ -32,11 +36,5 @@ if [ $? -eq 0 ]; then
 else
     echo "Installing NGINX"
     dnf install nginx -y
-
-    if [ $? -ne 0 ];then
-        echo "Installing NGINX is .....FAILED"
-        exit 1
-    else
-        echo "Installing NGINX is .....SUCCESS"
-    fi
+    VALIDATE NGINX $?
 fi
