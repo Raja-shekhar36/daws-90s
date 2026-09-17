@@ -22,22 +22,22 @@ VALIDATE(){
     fi
 }
 
-dnf list installed mysql &>>$LOGS_FILE
+dnf list installed mysql &>> $LOGS_FILE
 
 if [ $? -eq 0 ]; then
     echo "MYSQL is already Installed ... SKIPPING"
 else
     echo "Installing MySQL"
-    dnf install mysql -y &>>$LOGS_FILE
+    dnf install mysql -y &>> $LOGS_FILE
     VALIDATE MySQL $?
 fi
 
-dnf list installed nginx &>>$LOGS_FILE
+dnf list installed nginx &>> $LOGS_FILE
 
 if [ $? -eq 0 ]; then
     echo "NGINX is already Installed ... SKIPPING"
 else
     echo "Installing NGINX"
-    dnf install nginx -y &>>$LOGS_FILE
+    dnf install nginx -y &>> $LOGS_FILE
     VALIDATE NGINX $?
 fi
