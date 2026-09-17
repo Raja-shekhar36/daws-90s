@@ -2,7 +2,7 @@
 
 USERID=$(id -u)
 LOGS_DIR=/var/log/shell-script
-LOGS_FILE="$LOGS_DIR/$0.log" # /home/ec2-user/daws-90s/shell-logs/10-logs.sh.log
+LOGS_FILE="$LOGS_DIR/$0.log" # /var/log/shell-script/10-logs.sh.log
 
 # check root access or not
 if [ $USERID -ne 0 ]; then
