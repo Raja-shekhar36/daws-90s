@@ -14,10 +14,10 @@ fi
 
 VALIDATE(){
     if [ $2 -ne 0 ];then
-        echo "Installing $1 is .....FAILED"
+        echo "Installing $1 is .....FAILED" | tee -a $LOGS_FILE
         exit 1
     else
-        echo "Installing $1 is .....SUCCESS"
+        echo "Installing $1 is .....SUCCESS" | tee -a $LOGS_FILE
     fi
 }
 
